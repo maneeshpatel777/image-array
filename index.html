@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Email Assigner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Image Email Assigner</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="errorMessage" class="alert alert-danger mb-3" role="alert"></div>
+          <div id="imageContainer" class="mb-3">
+            <img id="currentImage" src="" alt="Random Image" class="img-fluid rounded" />
+          </div>
+          <form id="emailForm">
+            <div class="mb-3">
+              <input type="email" class="form-control" id="emailInput" required />
+            </div>
+            <button type="submit" class="btn btn-primary">Assign Image</button>
+            <button type="button" id="nextButton" class="btn btn-secondary">Next Image</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h2>Assigned Images</h2>
+          <div id="assignedImages"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
