@@ -9,21 +9,25 @@
   </head>
   <body>
     <div class="container mt-5">
-      <h1 class="text-center mb-4">Image Email Assigner</h1>
+      <h1 class="text-center mb-4">Javascript Image Array</h1>
       <div class="row">
         <div class="col-md-6">
           <div id="errorMessage" class="alert alert-danger mb-3" role="alert"></div>
+
           <div id="imageContainer" class="mb-3">
             <img id="currentImage" src="" alt="Random Image" class="img-fluid rounded" />
           </div>
+          <strong>Enter email:</strong>
           <form id="emailForm">
             <div class="mb-3">
-              <input type="email" class="form-control" id="emailInput" required />
+              <input type="email" class="form-control" id="emailInput" />
             </div>
             <button type="submit" class="btn btn-primary">Assign Image</button>
             <button type="button" id="nextButton" class="btn btn-secondary">Next Image</button>
           </form>
+          <br />
         </div>
+
         <div class="col-md-6">
           <h2>Assigned Images</h2>
           <div id="assignedImages"></div>
